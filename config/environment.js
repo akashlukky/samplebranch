@@ -5,6 +5,20 @@ module.exports = function(environment) {
     modulePrefix: 'sap',
     environment,
     rootURL: '/',
+    firebase:{
+      apiKey: "AIzaSyCAtfPXyUECpxvQkWEviBbHXZN3ygJDx9o",
+      authDomain: "phonebook-325c5.firebaseapp.com",
+      databaseURL: "https://phonebook-325c5.firebaseio.com",
+      projectId: "phonebook-325c5",
+      storageBucket: "phonebook-325c5.appspot.com",
+      messagingSenderId: "300711882352",
+      appId: "1:300711882352:web:5af99185e18953fa"
+    },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
